@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class MiniChatBot {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("🤖 Привет! Я мини чат-бот. Напиши что-нибудь, или 'выход' для завершения.");
+
+        while (true) {
+            System.out.print("Вы: ");
+            String input = scanner.nextLine().trim().toLowerCase();
+
+            if (input.equals("выход")) {
+                System.out.println("🤖 Пока! Хорошего дня.");
+                break;
+            } else if (input.contains("привет")) {
+                System.out.println("🤖 Привет-привет!");
+            } else if (input.contains("как дела")) {
+                System.out.println("🤖 У меня всё отлично! Спасибо, что спросили.");
+            } else if (input.contains("помощь")) {
+                System.out.println("🤖 Я могу ответить на: 'привет', 'как дела', 'выход'.");
+            } else {
+                System.out.println("🤖 Извини, я пока не понимаю это сообщение.");
+            }
+        }
+
+        scanner.close();
+    }
+}
+
+
+​​​​​​​
