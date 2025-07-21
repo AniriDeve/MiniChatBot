@@ -26,6 +26,3 @@ public class MiniChatBot {
         scanner.close();
     }
 }
-
-
-​​​​​​​
